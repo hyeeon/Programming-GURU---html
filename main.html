@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Pet</title>
+    <script src="https://kit.fontawesome.com/a4a31f5419.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <a href="./main.html" class="logo" target="_self">
+                <img
+                src="imgs/logo/logo.png"
+                alt="logo"
+                class="logo"
+                width="340" height="150"
+                />
+
+            </a>
+        </div>
+        
+        <div class="navbar__menu">
+            <ul class="navbar__menu">
+                <a href="./main.html" target="_self">
+                    <li class="navbar__menu__item active">홈</li>
+                </a>
+                <a href="#about" target="_self">
+                    <li class="navbar__menu__item">소개</li>
+                </a>
+                <a href="./animal.html" target="_self">
+                    <li class="navbar__menu__item">보호동물</li>
+                </a>
+                <a href="./email.html" target="_self">
+                    <li class="navbar__menu__item">연락</li>
+                </a>
+            </ul>
+        </div>
+        
+    </nav>
+
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <div class="gallery">
+            <input type="radio" name="slide" id="slide01" checked>
+            <input type="radio" name="slide" id="slide02">
+            <input type="radio" name="slide" id="slide03">
+
+            <div class="slidewrap">
+                <ul class="slidelist">
+                    <li>
+                        <a>
+                            <div class="textbox">
+                                <h3>사지말고 입양하세요</h3>
+                                <p>위드펫의 아이들은 가족을 기다리고 있어요</p>
+                            </div>
+                            <img src="./imgs/gallery/bg1.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <div class="textbox">
+                                <h3>사지말고 입양하세요</h3>
+                                <p>위드펫의 아이들은 가족을 기다리고 있어요</p>
+                            </div>
+                            <img src="./imgs/gallery/bg2.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <div class="textbox">
+                                <h3>사지말고 입양하세요</h3>
+                                <p>위드펫의 아이들은 가족을 기다리고 있어요</p>
+                            </div>
+                            <img src="./imgs/gallery/bg3.jpg">
+                        </a>
+                    </li>
+
+                    <div class="slide-control">
+                        <div class="control01">
+                            <label for="slide03" class="left"></label>
+                            <label for="slide02" class="right"></label>
+                        </div>
+                        <div class="control02">
+                            <label for="slide01" class="left"></label>
+                            <label for="slide03" class="right"></label>
+                        </div>
+                        <div class="control03">
+                            <label for="slide02" class="left"></label>
+                            <label for="slide01" class="right"></label>
+                        </div>
+                    </div>        
+                </ul>
+
+                <ul class="slide-pagelist">
+                    <li><label for="slide01"></label></li>
+                    <li><label for="slide02"></label></li>
+                    <li><label for="slide03"></label></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- about -->
+    <section class="about" id="about">
+        <h1>WithPet</h1>
+        <h2>위드펫은 길 위의 다친 동물들, 유기된 동물들의<br>구조 및 보호, 입양까지 책임지고 있습니다.</h2>
+        <div class="about__center">
+            <div class="box">
+                <div class="img-box">
+                    <img src="./imgs/about/ab1.jpg" alt="1" width="300px" height="300px">
+                </div>
+                <h3>구조 및 치료</h3>
+                <p>
+                    위험한 길 위에서 생활하며 다치거나 병을 얻은 아이들,<br>주인에게 버림받은 아이들을 구조하고 치료하고 있습니다.
+                </p>
+            </div>
+            <div class="box">
+                <div class="img-box">
+                    <img src="./imgs/about/ab2.jpg" alt="1" width="300px" height="300px">
+                </div>
+                <h3>입양</h3>
+                <p>
+                    구조한 모든 아이들이 가족의 울타리 안에서 사랑받으며<br>마지막을 함께 할 수 있도록 입양 활동을 진행하고 있습니다.
+                </p>
+            </div>
+            <div class="box">
+                <div class="img-box">
+                    <img src="./imgs/about/ab3.jpg" alt="1" width="300px" height="300px">
+                </div>
+                <h3>보호소 운영</h3>
+                <p>
+                    입양을 기다리는 아이들부터 입양이 어려운 노묘, 장애묘 등이 삶을<br>마칠 때까지 안전하게 쉬고 치료받을 수 있는 보호소를 운영중입니다.
+                </p>
+            </div>
+        </div>
+
+
+
+
+    </section>
+    <!-- photo -->
+    <section id="photo">
+        <div class="introduce__pet">
+            <h1>보호중인 아이들을 소개합니다.</h1>
+        </div>
+
+        <div class="pet__photo">
+            <a href="./animal/Charlie.html" class="photo" target="_self">
+                <img src="https://images.mypetlife.co.kr/content/uploads/2021/10/19151330/corgi-g1a1774f95_1280-1024x682.jpg" alt="강아지1" width="280" height="250">
+                <div class="photo__description">
+                    <h3>Charlie</h3>
+                </div>
+            </a>
+            <a href="./animal/Mickey.html" class="photo" target="_self">
+                <img src="https://cdn.eyesmag.com/content/uploads/posts/2022/03/22/main-d3bbc024-549a-4a23-9c08-5cb675d6b028.jpg" alt="강아지" width="280" height="250">
+                <div class="photo__description">
+                    <h3>Mickey</h3>
+                </div>
+            </a>
+            <a href="./animal/Harry.html" class="photo" target="_self">
+                <img src="http://image.dongascience.com/Photo/2016/09/14750507361195.jpg" alt="강아지" width="280" height="250">
+                <div class="photo__description">
+                    <h3>Harry</h3>
+                </div>
+            </a>
+            <a href="./animal/Hans.html" class="photo" target="_self">
+                <img src="http://newsimg.hankookilbo.com/2019/04/29/201904291390027161_3.jpg" alt="강아지" width="280" height="250">
+                <div class="photo__description">
+                    <h3>Hans</h3>
+                </div>
+            </a>
+            <a href="./animal/Mango.html" class="photo" target="_self">
+                <img src="https://www.ekara.org/file/getBlob/31813" alt="강아지" width="280" height="250">
+                <div class="photo__description">
+                    <h3>Mango</h3>
+                </div>
+            </a>
+            <a href="./animal/Penny.html" class="photo" target="_self">
+                <img src="https://www.bbeu.net/m/resources/uploadFile/20191119113703-e86-115e37704216.jpg" alt="강아지" width="280" height="250">
+                <div class="photo__description">
+                    <h3>Penny</h3>
+                </div>
+            </a>
+            <a href="./animal/Aelly.html" class="photo" target="_self">
+                <img src="https://flexible.img.hani.co.kr/flexible/normal/930/620/imgdb/original/2019/1120/20191120501989.jpg" alt="강아지" width="280" height="250">
+                <div class="photo__description">
+                    <h3>Aelly</h3>
+                </div>
+            </a>
+            <a href="./animal/Kun.html" class="photo" target="_self">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPOXRrQLO6hHtyZu-wBY59ccqH6BqF1ck6ZQ&usqp=CAU" alt="강아지" width="280" height="250">
+                <div class="photo__description">
+                    <h3>Kun</h3>
+                </div>
+            </a>
+            <a href="./animal/Jerry.html" class="photo" target="_self">
+                <img src="https://2.bp.blogspot.com/-ad8j3cBnQOo/V2D6YJRKXqI/AAAAAAAAQGg/Ov5FGmrb2dUuE1BcxrekU6FWj0wVaU_uQCLcB/s640/1.png" alt="강아지" width="280" height="250">
+                <div class="photo__description">
+                    <h3>Jerry</h3>
+                </div>
+            </a>
+            <a href="./animal/Peter.html" class="photo" target="_self">
+                <img src="https://www.dailyvet.co.kr/wp-content/uploads/2022/02/220215CAT-TNR1.jpg" alt="강아지" width="280" height="250">
+                <div class="photo__description">
+                    <h3>Peter</h3>
+                </div>
+            </a>
+        </div>
+        
+    </section>
+
+
+
+    <!-- contact -->
+
+    <section id="contact">
+        <div class="footer">
+            <div class="col-1">
+                <h3>영업시간</h3>
+                <a href="#">월 - 금</a>
+                <a href="#">8am - 6pm</a>
+                <a href="#">토 - 일</a>
+                <a href="#">8am - 4pm</a>
+                <br>
+                <br>
+                <a href="./reference.html">참고 사이트</a>
+            </div>
+            <div class="col-2">
+                <h3>주소</h3>
+                <a href="#">서울특별시 노원구 화랑로 621</a>
+                <a href="#">withpet@swu.ac.kr</a>
+                <a href="#">123-456-7890</a>
+                <div class="social-icons">
+                    <a href="https://instagram.com/swu.official?igshid=YmMyMTA2M2Y=" target="_blank">
+                        <i class="fa-brands fa-instagram" style="color: white;"></i>
+                    </a>
+                    <a href="https://www.youtube.com/user/seoulwomensuniv" target="_blank">
+                        <i class="fa-brands fa-youtube" style="color: white;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-3">
+                <h3>찾아오시는 길</h3>
+                <div align="right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.896732929932!2d127.0882627491892!3d37.62811682826077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb9870d108e45%3A0x14cb14d89b7450a7!2z7ISc7Jq47Jes7J6Q64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1658675815559!5m2!1sko!2skr" 
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

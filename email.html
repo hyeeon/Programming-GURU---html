@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Pet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a4a31f5419.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+    
+        @font-face {
+            font-family: 'KOTRAHOPE';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+    
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h2{ /*제목*/
+            text-align: center;
+            color: #73aace;
+            font-size: 40px; 
+        }
+        h5{
+            text-align: center;
+        }
+        h6{
+            text-align: center;
+            font-size: 14px;
+        }
+        span{
+            color: #73aace;
+        }
+        
+        /*입력창*/
+        input:focus{background-color: lightblue}
+        textarea:focus{background-color: lightblue}
+        div#input_inf{
+            position: absolute;
+            top: 50%;
+            left: 34%;
+        }
+        button{
+            float: right;
+        }
+
+        h4{ /*map 제목*/
+            color: skyblue;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <a href="./main.html" class="logo" target="_self">
+                <img
+                src="imgs/logo/logo.png"
+                alt="logo"
+                class="logo"
+                width="340" height="150"
+                />
+            </a>
+        </div>
+        
+        <div class="navbar__menu">
+            <ul class="navbar__menu">
+                <a href="./main.html" target="_self">
+                    <li class="navbar__menu__item">홈</li>
+                </a>
+                <a href="#about" target="_self">
+                    <li class="navbar__menu__item">소개</li>
+                </a>
+                <a href="./animal.html" target="_self">
+                    <li class="navbar__menu__item active">보호동물</li>
+                </a>
+                <a href="./email.html" target="_self">
+                    <li class="navbar__menu__item">연락</li>
+                </a>
+            </ul>
+        </div>
+        
+    </nav>
+
+    <!-- email -->
+    <section class="email">
+        <div class="email__form">
+            <h2 class="content-head is-center" style="font-family: 'KOTRAHOPE'">문의 메일</h2>
+            <h5 style="font-family: 'GmarketSansMedium'"> <span>Tel</span>
+            123-456-7890 • <span>Email</span> withpet@swu.ac.kr • <span>Address</span> 서울 노원구 화랑로 621 서울여자대학교</h5> <br>
+            <h6>
+                <p style="font-family: 'GmarketSansMedium'">
+                    보호중인 동물에 대한 문의나 입양 절차에 대해 설명이 필요하신가요? </p>
+                    <p style="font-family: 'GmarketSansMedium'">자유롭게 문의내용을 메일로 보내주세요! 친절하게 답변해드리겠습니다. 
+                </p>
+            </h6><br><br><br>
+
+            <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+            <!-- Style The Contact Form How Ever You Prefer -->
+            <link rel="stylesheet" href="style.css">
+
+            <br><br>
+            <form class="gform pure-form pure-form-stacked" method="POST" data-email="tjdusdkglaso@naver.com"
+            action="https://script.google.com/macros/s/AKfycbwn2QY080f-zUu_k_K7HCBwDJ9JXt0jLFNL8BQjQkik9KhE2bw/exec" >
+            <div id="input">
+                <div id="input_inf" class="form-elements" style="font-family: 'GmarketSansMedium'">
+                    <fieldset class="pure-group">
+                        <label>이름</label> 
+                        <input type="name" name="name" placeholder="이름" size="50" >
+                    </fieldset>
+    
+                    <fieldset class="pure-group">
+                        <label>이메일</label>
+                        <input type="email" name="email" placeholder="name@domain.com" size="50">
+                    </fieldset>
+    
+                    <fieldset class="pure-group">
+                        <label>전화번호</label>
+                        <input type="tel" name="tel" placeholder="010-1234-5678" size="50">
+                    </fieldset>
+    
+                    <fieldset class="pure-group">
+                        <label>내용</label>
+                        <textarea type="message" name="message" placeholder="문의하실 내용을 입력해주세요." cols="49" rows="10"
+                        placeholder=""></textarea>
+                    </fieldset>
+    
+    
+                    <button class="button-success pure-button button-xlarge" style="background-color: lightblue">
+                    <i class="fa fa-paper-plane"></i>&nbsp;메일 발송</button><br>
+                    
+                    <div class="map">
+                        <h4 style=" font-family: 'KOTRAHOPE'">위치 안내</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101129.17627250837!2d126.96355921640622!3d37.61894199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cba21c49379e7%3A0x18e763e51b5158de!2z7ISc7Jq47Jyg6riw64-Z66y87J6F7JaR7IS87YSw!5e0!3m2!1sko!2skr!4v1658512611295!5m2!1sko!2skr" width="483" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div style="display:none" class="thankyou_message">
+                <h2> 문의 감사합니다. 빠른 시일 내에 답변 드리겠습니다. </h2>
+            </div> 
+            </form>
+            <script data-cfasync="false" src="form-submission-handler.js"></script>
+        </div>
+
+    </section>
+
+    <!-- contact -->
+
+    <section id="contact">
+        <div class="footer">
+            <div class="col-1">
+                <h3>영업시간</h3>
+                <a href="#">월 - 금</a>
+                <a href="#">8am - 6pm</a>
+                <a href="#">토 - 일</a>
+                <a href="#">8am - 4pm</a>
+                <br>
+                <br>
+                <a href="./reference.html">참고 사이트</a>
+            </div>
+            <div class="col-2">
+                <h3>주소</h3>
+                <a href="#">서울특별시 노원구 화랑로 621</a>
+                <a href="#">withpet@swu.ac.kr</a>
+                <a href="#">123-456-7890</a>
+                <div class="social-icons">
+                    <a href="https://instagram.com/swu.official?igshid=YmMyMTA2M2Y=" target="_blank">
+                        <i class="fa-brands fa-instagram" style="color: white;"></i>
+                    </a>
+                    <a href="https://www.youtube.com/user/seoulwomensuniv" target="_blank">
+                        <i class="fa-brands fa-youtube" style="color: white;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-3">
+                <h3>찾아오시는 길</h3>
+                <div align="right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.896732929932!2d127.0882627491892!3d37.62811682826077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cb9870d108e45%3A0x14cb14d89b7450a7!2z7ISc7Jq47Jes7J6Q64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1658675815559!5m2!1sko!2skr" 
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
